@@ -1,0 +1,68 @@
+@import '../scss/reset';
+@import '../scss/variables';
+@import '../scss/mixin';
+@import '../scss/fonts';
+
+//  ========================================
+//  header styles start
+//  ========================================
+
+//  header styles end
+
+// ========================================
+// main styles start
+// ========================================
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2rem;
+  background-color: #b1d3aa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.todo {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.todo .todo__item {
+  padding: 1rem;
+}
+
+.todo .todo__item .todo__title {
+  font-size: 25px;
+}
+
+.todo .todo__item .form-control:focus {
+  border-color: #27af70;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.todo ul li:is(.checked) {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.form-check-input:checked + .form-check-label {
+  -webkit-text-decoration: line-through 3px blue;
+  text-decoration: line-through 3px blue;
+}
+
+// main styles end
+
+// ========================================
+// footer styles start
+// ========================================
+
+// footer styles end
